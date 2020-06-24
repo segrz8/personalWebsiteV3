@@ -1,28 +1,50 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Home />
+    <Hamburger :menuActive="menuActive" v-on:handleMenu="handleMenu" />
+    <Nav :menuActive="menuActive" />
+    <Portfolio />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Home from "./components/Home.vue";
+import Hamburger from "./components/Hamburger.vue";
+import Nav from "./components/Nav.vue";
+import Portfolio from "./components/Portfolio.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    Home,
+    Hamburger,
+    Nav,
+    Portfolio
+  },
+  data() {
+    return {
+      menuActive: false
+    };
+  },
+  methods: {
+    handleMenu() {
+      this.menuActive = !this.menuActive;
+    }
   }
-}
+};
 </script>
 
-<style>
+<style lang="scss">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Montserrat", sans-serif;
+  color: #303030;
 }
 </style>
