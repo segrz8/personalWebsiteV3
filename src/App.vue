@@ -4,6 +4,9 @@
     <Hamburger :menuActive="menuActive" v-on:handleMenu="handleMenu" />
     <Nav :menuActive="menuActive" />
     <Portfolio />
+    <About />
+    <Testimonials />
+    <Contact />
   </div>
 </template>
 
@@ -12,6 +15,9 @@ import Home from "./components/Home.vue";
 import Hamburger from "./components/Hamburger.vue";
 import Nav from "./components/Nav.vue";
 import Portfolio from "./components/Portfolio.vue";
+import About from "./components/About.vue";
+import Testimonials from "./components/Testimonials.vue";
+import Contact from "./components/Contact.vue";
 
 export default {
   name: "App",
@@ -19,7 +25,10 @@ export default {
     Home,
     Hamburger,
     Nav,
-    Portfolio
+    Portfolio,
+    About,
+    Testimonials,
+    Contact
   },
   data() {
     return {
@@ -44,7 +53,10 @@ export default {
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #303030;
+}
+p {
+  line-height: 1.4;
 }
 </style>

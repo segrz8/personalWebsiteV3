@@ -1,5 +1,5 @@
 <template>
-  <nav :class="[menuActive?'Nav Nav--active': 'Nav']">
+  <nav :class="menuActive?'Nav Nav--active':'Nav'">
     <div class="Nav__list">
       <ul>
         <li>Start</li>
@@ -65,8 +65,9 @@ export default {
         text-align: center;
         line-height: 2.3em;
         text-transform: uppercase;
-        // font-weight: 600;
+        // font-weight: 700;
         color: #303030;
+        font-size: 17px;
 
         @media (min-width: 1024px) {
           display: inline-block;

@@ -52,7 +52,7 @@ export default {
   &__txt {
     padding: 15vh 25px 25px;
     h1 {
-      font-weight: 800;
+      font-weight: 900;
       margin: 25px 0;
       font-size: 32px;
     }
@@ -73,7 +73,7 @@ export default {
     border: none;
     outline: none;
     display: block;
-    font-weight: 600;
+    // font-weight: 700;
     &--secondary {
       color: $color-primary;
       background-color: white;
@@ -81,7 +81,7 @@ export default {
     }
   }
   &__fold {
-    font-weight: 600;
+    font-weight: 700;
     animation: change 4s ease-out infinite;
   }
 }
