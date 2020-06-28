@@ -9,8 +9,8 @@
         <span class="Home__fold">{{foldTxtItems[foldTxtIndex]}}</span>.
       </p>
     </div>
-    <button class="Home__btn">Moje prace</button>
-    <button class="Home__btn Home__btn--secondary">Kontakt</button>
+    <button class="Home__btn" @click="handleScrollToSection('Portfolio')">Moje prace</button>
+    <button class="Home__btn Home__btn--secondary" @click="handleScrollToSection('Contact')">Kontakt</button>
   </section>
 </template>
 
@@ -34,6 +34,9 @@ export default {
           this.foldTxtIndex = 0;
         }
       }, 4000);
+    },
+    handleScrollToSection(section) {
+      this.$emit("handleScrollToSection", section);
     }
   },
   mounted() {

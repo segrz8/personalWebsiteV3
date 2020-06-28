@@ -1,7 +1,5 @@
 <template>
   <div class="Hamburger" @click="handleMenu">
-    <!-- <i v-if="menuActive" class="fas fa-times"></i> -->
-    <!-- <i v-else class="fas fa-bars"></i> -->
     <i :class="[menuActive?'fas fa-times': 'fas fa-bars']"></i>
   </div>
 </template>

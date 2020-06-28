@@ -2,11 +2,11 @@
   <nav :class="menuActive ? 'Nav Nav--active':'Nav'">
     <div class="Nav__list">
       <ul>
-        <li>Start</li>
-        <li>Moje prace</li>
-        <li>O mnie</li>
-        <li>Opinie klientów</li>
-        <li>Kontakt</li>
+        <li @click="handleScrollToSection('Home')">Start</li>
+        <li @click="handleScrollToSection('Portfolio')">Moje prace</li>
+        <li @click="handleScrollToSection('About')">O mnie</li>
+        <li @click="handleScrollToSection('Testimonials')">Opinie klientów</li>
+        <li @click="handleScrollToSection('Contact')">Kontakt</li>
       </ul>
     </div>
   </nav>
@@ -14,7 +14,20 @@
 
 <script>
 export default {
-  props: ["menuActive"]
+  props: ["menuActive"],
+  methods: {
+    handleMenu() {
+      this.$emit("handleMenu");
+    }
+  },
+  data() {
+    return {
+      handleScrollToSection(section) {
+        this.$emit("handleScrollToSection", section);
+        this.handleMenu();
+      }
+    };
+  }
 };
 </script>
 

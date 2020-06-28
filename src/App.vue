@@ -1,8 +1,12 @@
 <template>
   <div id="app">
-    <Home />
+    <Home v-on:handleScrollToSection="handleScrollToSection" />
     <Hamburger :menuActive="menuActive" v-on:handleMenu="handleMenu" />
-    <Nav :menuActive="menuActive" />
+    <Nav
+      v-on:handleScrollToSection="handleScrollToSection"
+      :menuActive="menuActive"
+      v-on:handleMenu="handleMenu"
+    />
     <Portfolio />
     <About />
     <Testimonials />
@@ -41,6 +45,11 @@ export default {
   methods: {
     handleMenu() {
       this.menuActive = !this.menuActive;
+    },
+    handleScrollToSection(section) {
+      document.querySelector(`.${section}`).scrollIntoView({
+        behavior: "smooth"
+      });
     }
   }
 };
