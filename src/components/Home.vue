@@ -47,6 +47,7 @@ export default {
 
 <style lang="scss">
 @import "_variables.scss";
+@import "_button.scss";
 .Home {
   height: 100vh;
   &__txt {
@@ -62,18 +63,7 @@ export default {
     }
   }
   &__btn {
-    margin-left: 25px;
-    margin-bottom: 15px;
-    width: 150px;
-    height: 35px;
-    font-size: 18px;
-    font-family: "Montserrat", sans-serif;
-    color: white;
-    background-color: $color-primary;
-    border: none;
-    outline: none;
-    display: block;
-    // font-weight: 700;
+    @extend .btnPrimary;
     &--secondary {
       color: $color-primary;
       background-color: white;

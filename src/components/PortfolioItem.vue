@@ -26,7 +26,7 @@ export default {
     width: 150px;
     height: 35px;
     font-size: 17px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: white;
     background-color: $color-primary;
     // border: none;

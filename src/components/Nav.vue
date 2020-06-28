@@ -1,5 +1,5 @@
 <template>
-  <nav :class="menuActive?'Nav Nav--active':'Nav'">
+  <nav :class="menuActive ? 'Nav Nav--active':'Nav'">
     <div class="Nav__list">
       <ul>
         <li>Start</li>

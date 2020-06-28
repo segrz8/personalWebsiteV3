@@ -7,6 +7,7 @@
     <About />
     <Testimonials />
     <Contact />
+    <Footer />
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import Portfolio from "./components/Portfolio.vue";
 import About from "./components/About.vue";
 import Testimonials from "./components/Testimonials.vue";
 import Contact from "./components/Contact.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
@@ -28,7 +30,8 @@ export default {
     Portfolio,
     About,
     Testimonials,
-    Contact
+    Contact,
+    Footer
   },
   data() {
     return {
