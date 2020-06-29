@@ -1,5 +1,6 @@
 <template>
   <section class="Home">
+    <img class="Home__logo" src="../assets/logo.png" alt />
     <div class="Home__txt">
       <p>Witaj!</p>
       <h1>Stworzę dla Ciebie stronę internetową, o jakiej marzysz.</h1>
@@ -53,8 +54,12 @@ export default {
 @import "_button.scss";
 .Home {
   height: 100vh;
+  &__logo {
+    height: 30px;
+    margin: 25px 25px;
+  }
   &__txt {
-    padding: 15vh 25px 25px;
+    padding: 7vh 25px 25px;
     h1 {
       font-weight: 900;
       margin: 25px 0;

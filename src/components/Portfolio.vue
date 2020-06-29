@@ -45,6 +45,9 @@ export default {
 .Portfolio {
   &__title {
     padding: 25px;
+    @media (min-width: 1024px) {
+      padding: 90px 25px 25px;
+    }
   }
 }
 </style>

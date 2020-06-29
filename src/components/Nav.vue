@@ -48,16 +48,12 @@ export default {
 
   @media (min-width: 1024px) {
     width: 100vw;
-    height: 80px;
-    background-color: rgb(255, 0, 0);
+    height: 60px;
+    background-color: $color-secondary;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 2;
-  }
-
-  @media (min-width: 1440px) {
-    height: 110px;
   }
 
   &--active {
@@ -84,7 +80,8 @@ export default {
 
         @media (min-width: 1024px) {
           display: inline-block;
-          padding-left: 1.5em;
+          margin-left: 1.5em;
+          cursor: pointer;
         }
       }
     }

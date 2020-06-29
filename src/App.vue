@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    <Home v-on:handleScrollToSection="handleScrollToSection" />
     <Hamburger :menuActive="menuActive" v-on:handleMenu="handleMenu" />
     <Nav
       v-on:handleScrollToSection="handleScrollToSection"
       :menuActive="menuActive"
       v-on:handleMenu="handleMenu"
     />
+    <Home v-on:handleScrollToSection="handleScrollToSection" />
     <Portfolio />
     <About />
     <Testimonials />
@@ -70,5 +70,10 @@ export default {
 }
 p {
   line-height: 1.4;
+}
+button {
+  @media (min-width: 1024px) {
+    cursor: pointer;
+  }
 }
 </style>
