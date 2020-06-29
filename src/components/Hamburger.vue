@@ -25,15 +25,16 @@ export default {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: rgba($color: $color-primary, $alpha: 0.4);
+  background-color: rgba(white, $alpha: 0.8);
+  // filter: blur(1em);
 
   @media (min-width: 1024px) {
     display: none;
   }
 
   .fas {
-    color: white;
-    font-size: 1.4em;
+    color: $color-primary;
+    font-size: 27px;
     line-height: 40px;
     position: absolute;
     left: 50%;

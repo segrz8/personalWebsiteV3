@@ -61,7 +61,7 @@
         <i class="fas fa-envelope-square"></i>
       </a>
     </div>
-    <i class="fas fa-arrow-circle-up"></i>
+    <i class="fas fa-arrow-circle-up" @click="handleScrollToSection('Home')"></i>
   </section>
 </template>
 
@@ -109,6 +109,9 @@ export default {
         this.userMessageInput = "";
         this.btnClicked = false;
       }
+    },
+    handleScrollToSection(section) {
+      this.$emit("handleScrollToSection", section);
     }
   }
 };
@@ -185,16 +188,15 @@ export default {
   }
   &__icons {
     height: 100px;
-    width: 100%;
+    width: 25px;
     display: flex;
     flex-direction: column;
-
+    transform: translateX(calc(100vw - 50px));
     a {
       color: #303030;
-      font-size: 23px;
-      text-align: right;
-      display: inline;
-      margin: 0 25px 5px;
+      font-size: 25px;
+      text-align: center;
+      margin-bottom: 5px;
     }
   }
   .fa-arrow-circle-up {

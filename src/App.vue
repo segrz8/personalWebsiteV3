@@ -10,7 +10,7 @@
     <Portfolio />
     <About />
     <Testimonials />
-    <Contact />
+    <Contact v-on:handleScrollToSection="handleScrollToSection" />
     <Footer />
   </div>
 </template>
