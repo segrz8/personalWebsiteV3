@@ -67,13 +67,13 @@ export default {
   margin-right: auto;
   font-family: "Roboto", sans-serif;
   color: #303030;
-}
-p {
-  line-height: 1.4;
-}
-button {
-  @media (min-width: 1024px) {
-    cursor: pointer;
+  p {
+    line-height: 1.4;
+  }
+  button {
+    @media (min-width: 1024px) {
+      cursor: pointer;
+    }
   }
 }
 </style>

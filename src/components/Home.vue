@@ -1,6 +1,6 @@
 <template>
   <section class="Home">
-    <img class="Home__logo" src="../assets/logo.png" alt />
+    <img class="Home__logo" src="../assets/logo.png" alt="Logo" />
     <div class="Home__txt">
       <p>Witaj!</p>
       <h1>Stworzę dla Ciebie stronę internetową, o jakiej marzysz.</h1>
@@ -12,6 +12,7 @@
     </div>
     <button class="Home__btn" @click="handleScrollToSection('Portfolio')">Moje prace</button>
     <button class="Home__btn Home__btn--secondary" @click="handleScrollToSection('Contact')">Kontakt</button>
+    <img class="Home__illustration" src="../assets/office.jpg" alt="Office illustration" />
   </section>
 </template>
 
@@ -54,12 +55,18 @@ export default {
 @import "_button.scss";
 .Home {
   height: 100vh;
+  @media (min-width: 1024px) {
+    margin-left: 150px;
+  }
   &__logo {
     height: 30px;
     margin: 25px 25px;
   }
   &__txt {
     padding: 7vh 25px 25px;
+    @media (min-width: 1024px) {
+      max-width: 500px;
+    }
     h1 {
       font-weight: 900;
       margin: 25px 0;
@@ -76,11 +83,30 @@ export default {
       color: $color-primary;
       background-color: white;
       border: solid $color-primary 2px;
+      @media (min-width: 1024px) {
+        &:hover {
+          background-color: #303030;
+          border: none;
+          color: white;
+        }
+      }
     }
   }
   &__fold {
     font-weight: 700;
     animation: change 4s ease-out infinite;
+  }
+  &__illustration {
+    display: none;
+    @media (min-width: 1024px) {
+      display: block;
+      position: absolute;
+      right: 80px;
+      top: 90px;
+      z-index: -1;
+      // opacity: 0.8;
+      width: 650px;
+    }
   }
 }
 @keyframes change {

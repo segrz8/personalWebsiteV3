@@ -10,4 +10,11 @@
     border: none;
     outline: none;
     display: block;
+    transition: .35s;
+
+    @media (min-width: 1024px) {
+        &:hover {
+            background-color: #303030;
+        }
+    }
 }

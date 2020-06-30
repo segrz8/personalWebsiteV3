@@ -1,5 +1,6 @@
 <template>
   <nav :class="menuActive ? 'Nav Nav--active':'Nav'">
+    <img class="Nav__logo" src="../assets/logo.png" alt="Logo" />
     <div class="Nav__list">
       <ul>
         <li @click="handleScrollToSection('Home')">Start</li>
@@ -47,17 +48,21 @@ export default {
   align-items: center;
 
   @media (min-width: 1024px) {
-    width: 100vw;
     height: 60px;
-    background-color: $color-secondary;
-    position: fixed;
-    top: 0;
     right: 0;
-    z-index: 2;
   }
 
   &--active {
     right: 0;
+  }
+  &__logo {
+    display: none;
+    @media (min-width: 1024px) {
+      display: block;
+      height: 30px;
+      position: absolute;
+      left: 80px;
+    }
   }
 
   &__list {
@@ -77,6 +82,10 @@ export default {
         // font-weight: 700;
         color: #303030;
         font-size: 17px;
+        transition: 0.35s;
+        &:hover {
+          color: #909090;
+        }
 
         @media (min-width: 1024px) {
           display: inline-block;
