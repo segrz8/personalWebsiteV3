@@ -7,6 +7,9 @@
 <style lang="scss">
 footer {
   background-color: #303030;
+  @media (min-width: 1024px) {
+    margin-top: 55px;
+  }
   p {
     text-align: center;
     color: white;

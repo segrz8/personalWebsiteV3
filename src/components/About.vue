@@ -32,10 +32,13 @@ export default {};
       padding: 90px 25px 25px;
       margin-left: 150px;
     }
+    @media (min-width: 1440px) {
+      margin-left: 350px;
+    }
   }
   &__flex {
     @media (min-width: 1024px) {
-      margin: 60px 150px;
+      margin: 60px 350px;
       display: flex;
     }
   }

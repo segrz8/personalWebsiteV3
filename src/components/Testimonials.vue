@@ -38,6 +38,7 @@ export default {
     padding: 45px 25px;
     @media (min-width: 1024px) {
       padding: 90px 25px 25px;
+      margin: 0 350px;
     }
   }
 }

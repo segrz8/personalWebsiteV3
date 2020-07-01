@@ -16,21 +16,21 @@ export default {
       portfolioItems: [
         {
           id: 0,
-          img: require("../assets/vmarine.jpg"),
+          img: require("../assets/vm.jpg"),
           link: "http://vmarine.pl/",
           txt:
             "Strona wykonana na zlecenie firmy VMARINE prowadzącej wynajem i sprzedaż jachtów oraz powiązanych akcesoriów, a ponadto organizację rejsów w Polsce i Chorwacji."
         },
         {
           id: 1,
-          img: require("../assets/smartcontrol.jpg"),
+          img: require("../assets/sc.jpg"),
           link: "http://smartkontrol.pl/",
           txt:
             "Strona wykonana w kilkanaście godzin na zlecenie wielobranżowej firmy SmartControl zajmującej się usługą kontroli biletowej, wynajmem autokarów i nie tylko."
         },
         {
           id: 2,
-          img: require("../assets/safetyday.jpg"),
+          img: require("../assets/sd.jpg"),
           link: "http://safetyday.pl/",
           txt:
             "Strona wykonana dla firmy Drivemat organizującej tzw. dni bezpieczeństwa czyli atrakcyjne pokazy BHP."
@@ -48,6 +48,9 @@ export default {
     @media (min-width: 1024px) {
       padding: 90px 25px 25px;
       margin-left: 150px;
+    }
+    @media (min-width: 1440px) {
+      margin-left: 350px;
     }
   }
 }

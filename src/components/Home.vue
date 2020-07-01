@@ -58,6 +58,9 @@ export default {
   @media (min-width: 1024px) {
     margin-left: 150px;
   }
+  @media (min-width: 1440px) {
+    margin-left: 350px;
+  }
   &__logo {
     height: 30px;
     margin: 25px 25px;
@@ -67,14 +70,23 @@ export default {
     @media (min-width: 1024px) {
       max-width: 500px;
     }
+    @media (min-width: 1440px) {
+      padding: 15vh 25px 25px;
+    }
     h1 {
       font-weight: 900;
       margin: 25px 0;
       font-size: 32px;
+      @media (min-width: 1440px) {
+        font-size: 40px;
+      }
     }
     p {
       font-size: 19px;
       line-height: 1.4;
+      @media (min-width: 1440px) {
+        font-size: 22px;
+      }
     }
   }
   &__btn {
@@ -102,10 +114,15 @@ export default {
       display: block;
       position: absolute;
       right: 80px;
-      top: 90px;
+      top: 17vh;
       z-index: -1;
       // opacity: 0.8;
       width: 650px;
+    }
+    @media (min-width: 1440px) {
+      width: 950px;
+      right: 200px;
+      top: 17vh;
     }
   }
 }

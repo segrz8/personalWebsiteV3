@@ -24,6 +24,9 @@ export default {
     margin: 0 150px;
     display: flex;
   }
+  @media (min-width: 1440px) {
+    margin: 0 350px;
+  }
   div {
     @media (min-width: 1024px) {
       flex-basis: 50%;
@@ -34,6 +37,9 @@ export default {
       width: 100%;
       object-fit: cover;
       height: 200px;
+      @media (min-width: 1440px) {
+        height: 250px;
+      }
     }
   }
   &__infoWrap {

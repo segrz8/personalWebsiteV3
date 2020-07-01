@@ -13,6 +13,8 @@
     transition: .35s;
 
     @media (min-width: 1024px) {
+        display: inline;
+
         &:hover {
             background-color: #303030;
         }

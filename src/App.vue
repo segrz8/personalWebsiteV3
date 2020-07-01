@@ -75,5 +75,10 @@ export default {
       cursor: pointer;
     }
   }
+  h2 {
+    @media (min-width: 1440px) {
+      font-size: 30px;
+    }
+  }
 }
 </style>

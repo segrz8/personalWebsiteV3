@@ -21,6 +21,10 @@ export default {
 <style lang="scss">
 .TestimonialsItem {
   padding: 0 25px;
+  @media (min-width: 1024px) {
+    padding: 25px;
+    margin: 0 350px;
+  }
   &__belowTxt {
     text-align: right;
     margin: 15px 0;
