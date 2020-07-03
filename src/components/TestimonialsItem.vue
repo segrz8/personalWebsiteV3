@@ -23,6 +23,9 @@ export default {
   padding: 0 25px;
   @media (min-width: 1024px) {
     padding: 25px;
+    margin: 0 150px;
+  }
+  @media (min-width: 1440px) {
     margin: 0 350px;
   }
   &__belowTxt {

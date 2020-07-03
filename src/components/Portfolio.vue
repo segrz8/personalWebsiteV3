@@ -19,7 +19,7 @@ export default {
           img: require("../assets/vm.jpg"),
           link: "http://vmarine.pl/",
           txt:
-            "Strona wykonana na zlecenie firmy VMARINE prowadzącej wynajem i sprzedaż jachtów oraz powiązanych akcesoriów, a ponadto organizację rejsów w Polsce i Chorwacji."
+            "Strona wykonana na zlecenie firmy VMARINE prowadzącej sprzedaż jachtów oraz powiązanych akcesoriów, a ponadto organizację rejsów w Polsce i Chorwacji."
         },
         {
           id: 1,

@@ -121,7 +121,7 @@ export default {
     }
     @media (min-width: 1440px) {
       width: 950px;
-      right: 200px;
+      right: 10vw;
       top: 17vh;
     }
   }

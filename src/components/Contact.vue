@@ -131,6 +131,9 @@ export default {
     padding: 25px;
     @media (min-width: 1024px) {
       padding: 90px 25px 25px;
+      margin: 0 150px;
+    }
+    @media (min-width: 1440px) {
       margin: 0 350px;
     }
   }
@@ -230,6 +233,10 @@ export default {
   }
   &__flexContainer {
     @media (min-width: 1024px) {
+      display: flex;
+      margin: 0 150px;
+    }
+    @media (min-width: 1440px) {
       display: flex;
       margin: 0 350px;
     }
