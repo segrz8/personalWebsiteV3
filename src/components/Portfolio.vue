@@ -33,7 +33,7 @@ export default {
           img: require("../assets/sd.jpg"),
           link: "http://safetyday.pl/",
           txt:
-            "Strona wykonana dla firmy Drivemat organizującej tzw. dni bezpieczeństwa czyli atrakcyjne pokazy BHP."
+            "Strona wykonana dla firmy Drivemat organizującej tzw. dni bezpieczeństwa, czyli atrakcyjne pokazy BHP."
         }
       ]
     };
