@@ -79,7 +79,7 @@ export default {
       userNameInput: "",
       userEmailInput: "",
       userMessageInput: "",
-      btnClicked: false
+      btnClicked: false,
     };
   },
   methods: {
@@ -100,12 +100,12 @@ export default {
           .set({
             name: this.userNameInput,
             email: this.userEmailInput,
-            message: this.userMessageInput
+            message: this.userMessageInput,
           })
-          .then(function() {
+          .then(function () {
             alert("Pomyślnie wysłano wiadomość");
           })
-          .catch(function(error) {
+          .catch(function (error) {
             alert(
               `Coś poszło nie tak. Spróbuj ponownie później lub skontaktuj się pod adresem sebastiangrzelak87@wp.pl. Error: ${error}`
             );
@@ -118,8 +118,8 @@ export default {
     },
     handleScrollToSection(section) {
       this.$emit("handleScrollToSection", section);
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -127,6 +127,7 @@ export default {
 @import "_variables.scss";
 @import "_button.scss";
 .Contact {
+  margin-bottom: 200px;
   &__title {
     padding: 25px;
     @media (min-width: 1024px) {

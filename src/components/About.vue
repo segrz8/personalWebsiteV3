@@ -12,7 +12,7 @@
           <span class="About__bold">Moja przygoda</span> z programowaniem rozpoczęła się pod koniec 2018, kiedy to postanowiłem się przekwalifikować. Na początku eksperymentowałem z językami C++ oraz Python. Niedługo potem skoncentrowałem uwagę na front-end developmencie. Całą wiedzę pozyskiwałem z kursów online. Na początku 2020 zacząłem oferować swoje usługi jako freelancer. Aktualnie moim celem jest dalszy rozwój, opanowywanie nowych technologii oraz zatrudnienie się na stanowisku juniora lub stażysty.
         </p>
         <p>
-          <span class="About__bold">Moje hobby</span> poza komputerowymi to między innymi: gra na gitarze elektrycznej i basowej, śpiew, produkcja muzyczna, tenis ziemny i stołowy, skateboarding, kalistenika.
+          <span class="About__bold">Moje hobby</span> poza komputerowymi to między innymi: gra na gitarze elektrycznej, śpiew, produkcja muzyczna, tenis ziemny, skateboarding.
         </p>
       </div>
     </div>
